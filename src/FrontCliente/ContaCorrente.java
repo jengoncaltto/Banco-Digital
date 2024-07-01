@@ -1,8 +1,13 @@
-public class ContaPoupanca extends Conta{
+public class ContaCorrente extends Conta{
+
+
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
+    }
 
     @Override
     public void imprimirExtrato() {
-        System.out.println("=== Extrato da conta poupanca ===");
+        System.out.println("=== Extrato da conta corrente ===");
         System.out.println(String.format("Agencia: %d ", super.agencia));
         System.out.println(String.format("Numero: %d ", super.numero));
         System.out.println(String.format("Saldo: %.2f ", super.saldo));
