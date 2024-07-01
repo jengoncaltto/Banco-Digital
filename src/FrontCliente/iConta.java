@@ -1,3 +1,7 @@
+package FrontCliente;
+
+import FrontCliente.Conta;
+
 public interface iConta {
      void sacar(double valor);
      void depositar(double valor);

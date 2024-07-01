@@ -1,4 +1,6 @@
-public class ContaPoupanca extends Conta{
+package FrontCliente;
+
+public class ContaPoupanca extends Conta {
 
     public ContaPoupanca(Cliente cliente) {
         super(cliente);

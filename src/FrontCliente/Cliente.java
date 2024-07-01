@@ -1,8 +1,11 @@
+package FrontCliente;
+
 public class Cliente {
     private String nome;
     private String dataNascimento;
     private String cpf;
     private String endereco;
+    private Conta conta;
 
     public Cliente(String nome, String dataNascimento, String cpf, String endereco) {
         this.nome = nome;
@@ -10,7 +13,6 @@ public class Cliente {
         this.cpf = cpf;
         this.endereco = endereco;
     }
-
     public String getNome() {
         return nome;
     }
@@ -22,4 +24,7 @@ public class Cliente {
     public String getCpf() {
         return cpf;
     }
+
+
+
 }

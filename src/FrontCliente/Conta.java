@@ -1,15 +1,23 @@
-public abstract class Conta implements iConta{
+package FrontCliente;
+
+public abstract class Conta implements iConta {
     protected static int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
     protected int agencia;
     protected int numero;
     protected double saldo;
-    protected Cliente cliente;
+    public Cliente cliente;
 
     public Conta(Cliente cliente) {
         this.agencia = AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
         this.cliente = cliente;
+    }
+
+    public Conta(int agencia, int numero, double saldo) {
+        this.agencia = agencia;
+        this.numero = numero;
+        this.saldo = saldo;
     }
 
     @Override
