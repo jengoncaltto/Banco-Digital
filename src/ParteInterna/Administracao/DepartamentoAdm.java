@@ -15,16 +15,41 @@ public class DepartamentoAdm implements IFuncionario {
 
     @Override
     public void adicionarFuncionario(String nome, String dataNascimento, long matricula, String cargo, double salario, boolean status) {
-
+        funcionariosAdm.add(new Funcionario(nome, dataNascimento, matricula, cargo, salario, status));
     }
 
     @Override
-    public void removerFuncionario(long matricula, String nome) {
+    public void removerFuncionario(long matricula) {
+        if(!funcionariosAdm.isEmpty()){
+            for (Funcionario f: funcionariosAdm) {
+                if(f.getMatricula() == matricula){
+                    funcionariosAdm.remove(f);
+                }
+            }
+        }
+    }
 
+    @Override
+    public Funcionario pesquisaFuncionarioMatricula(long matricula) {
+        Funcionario func = null;
+        if(!funcionariosAdm.isEmpty()){
+            for (Funcionario f: funcionariosAdm) {
+                if(f.getMatricula() == matricula){
+
+                    func = f;
+                }
+            }
+        }
+        return func;
+    }
+
+    @Override
+    public String toString() {
+        return "DepartamentoAdm" +funcionariosAdm;
     }
 
     @Override
     public String listarTodosFuncionarios() {
-        return null;
+        return toString();
     }
 }

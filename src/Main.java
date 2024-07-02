@@ -17,9 +17,5 @@ public class Main {
         cc.imprimirExtrato();
         cp.imprimirExtrato();
 
-        /*Gerente gerente1 = new Gerente("Matheus", "10-8-2003",20249893,
-                "Gerente de TI", "TI",20000,true);
-        System.out.println(gerente1);*/
-
     }
 }

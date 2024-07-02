@@ -18,16 +18,26 @@ public class DepartamentoTI implements IFuncionario {
     }
 
     @Override
-    public void removerFuncionario(long matricula, String nome) {
+    public void removerFuncionario(long matricula) {
         if(!funcionariosTI.isEmpty()){
             for (Funcionario f: funcionariosTI) {
                 if(f.getMatricula() == matricula){
-                    if(f.getNome().equalsIgnoreCase(nome)){
-                        funcionariosTI.remove(f);
-                    }
+                    funcionariosTI.remove(f);
                 }
             }
         }
+    }
+
+    public Funcionario pesquisaFuncionarioMatricula(long matricula){
+        Funcionario func = null;
+        if(!funcionariosTI.isEmpty()){
+            for (Funcionario f: funcionariosTI){
+                if(f.getMatricula() == matricula){
+                    func = f;
+                }
+            }
+        }
+        return func;
     }
 
     @Override
@@ -47,6 +57,8 @@ public class DepartamentoTI implements IFuncionario {
                 "Estagiario",20000,true);
         ti.adicionarFuncionario("Isabelle", "23-01-2003", 202448753,"Estagiaria", 1300, true);
 
+        System.out.println(ti.listarTodosFuncionarios());
+        ti.removerFuncionario(20249893);
         System.out.println(ti.listarTodosFuncionarios());
     }
 }
