@@ -53,21 +53,6 @@ Banco-Digital-main/
 │           └── DepartamentoTI.java
 ```
 
-## ▶️ Como Executar
-
-1. Certifique-se de ter o **Java JDK 11+** instalado.
-2. Clone este repositório ou extraia o `.zip`.
-3. Compile os arquivos:
-
-   ```bash
-   javac src/**/*.java
-   ```
-4. Execute o programa principal:
-
-   ```bash
-   java src/Main
-   ```
-
 ## 📚 Conceitos Abordados
 
 * Programação Orientada a Objetos (POO)
