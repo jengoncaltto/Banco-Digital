@@ -83,7 +83,3 @@ Banco-Digital-main/
 ## 👨‍💻 Autor
 Desenvolvido por Jenifer Gonçalves Brito.
 Projeto desenvolvido para fins acadêmicos de estudo em **Java** e **POO**.
-
----
-
-Quer que eu adicione também **exemplos de uso do sistema** (tipo comandos ou simulação de cliente criando conta, depositando, transferindo) para deixar o README ainda mais completo?
